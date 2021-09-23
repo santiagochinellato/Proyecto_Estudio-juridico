@@ -1,0 +1,129 @@
+/* MENU */
+.container {
+  display: flex;
+  // justify-content: center !important;
+  align-items: center;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+nav {
+  display: flex;
+  // flex-direction: column;
+  z-index: 300 !important;
+}
+.menu-desktop {
+  --animate-duration: 8s;
+}
+.logo-nav {
+  width: 8vw;
+  margin-left: 3vw;
+  visibility: hidden;
+}
+.contactanos-item {
+  color: #fff !important;
+  font-size: 20px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.contactanos-item:hover {
+  background-color: silver;
+  color: black !important;
+}
+.nav-link {
+  margin: auto 2.3rem;
+  font-size: 1.2rem !important;
+}
+.texto-menu {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.logo-navbar {
+  width: 166px;
+  height: 73px;
+}
+#nav {
+  background-color: transparent;
+}
+
+#display {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  #nav {
+    display: none;
+  }
+  #display {
+    display: none;
+  }
+  .menu-mobile {
+    background-color: #59188c;
+  }
+}
+/* FIN MENU */
+
+@media (min-width: 320px) and (max-width: 992px) {
+  /* INICIO NAVBAR */
+  .bg-menu {
+    background-color: #4a148c !important;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .botonmenu {
+    color: white !important;
+    border-radius: 4px;
+    height: 39px;
+    font-size: 18px;
+    /* padding: 10px; */
+    border-color: #4a148c !important;
+  }
+
+  .botonmenu:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .lineasboton {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+
+  .nav-link-bg-color {
+    background-color: #e62b75;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav-link-color-letra {
+    color: white !important;
+    font-size: 16px;
+    width: 115px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .nav-link-color-letra-contacto {
+    color: white !important;
+    font-size: 16px;
+    width: 120px;
+    text-align: center;
+    border: 1px solid #e62b75 !important;
+  }
+
+  .nav-link-color-letra-contacto:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e62b75 !important;
+  }
+
+  /*  FIN NAVBAR */
+}

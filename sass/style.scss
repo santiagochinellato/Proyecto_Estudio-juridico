@@ -1,1 +1,19 @@
+// configuracion
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
 
+// import
+
+@import "navBar";
+@import "header";
+@import "presentacion";
+@import "especialidades";
+
+// header
+.imagen-header {
+  width: 100%;
+  height: auto;
+}

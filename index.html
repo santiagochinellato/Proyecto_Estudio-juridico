@@ -5,21 +5,136 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <!-- css -->
-  <link rel="stylesheet" href="/css/style.css">
+  <!-- bts icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
+  <header>
+    <img class="imagen-header" src="./images/imagenes/libro-primer-plano-bn-cut.jpg " alt="">
+    <img class="imagen-logo" src="./images/iconos_logos/logo_blanco-borde.png" alt="">
+    <!-- Menu de navegacion desktop  -->
+    <nav class=" navbar fixed-top navbar-expand-lg navbar-dark menu-desktop animate__animated animate__fadeIn  "
+      id="nav">
+      <img class="logo-nav" src="./images/iconos_logos/logo_blanco.png" alt="" id="logoNav">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link texto-menu pe-4" href="#">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu pe-4" href="#">Descargá la guia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu pe-4" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu pe-4" href="#">Charlemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contactanos-item" href="#">Contactános</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Menu de navegacion mobile  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 menu-mobile " id="display">
+      <div class="container">
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Método</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Descargá la guia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Charlemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Contactános</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin menu de navegacion -->
+    <div class="header_caja-contacto ">
+      <div class="contacto animate__animated animate__fadeIn">
+        <i class="bi bi-telephone-fill imagen-contacto "></i>
+        <p>+54 9 0294 4422623</p>
+      </div>
+      <div class="contacto animate__animated animate__fadeIn">
+        <i class="bi bi-whatsapp imagen-contacto "></i>
+        <p>+54 9 294 4232300</p>
+      </div>
+      <div class="contacto animate__animated animate__fadeIn">
+        <i class="bi bi-envelope-fill imagen-contacto "></i>
+        <p>jerezleal@estudio.com</p>
+      </div>
+    </div>
+  </header>
+  <section class="seccion-presentacion">
+
+    <p class="texto-presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur. Modi quo
+      iste voluptate a dolor.
+      Consequatur eos, earum voluptate alias fuga eius voluptatum illum sapiente soluta ab excepturi adipisci pariatur
+      culpa blanditiis maxime quam cupiditate distinctio odio voluptates amet magni assumenda! Corrupti illo tempore
+      officia adipisci animi dignissimos repudiandae vel consequuntur doloribus delectus architecto inventore alias
+      labore reprehenderit quidem error neque iusto laudantium voluptatibus quas tenetur, voluptates perspiciatis natus.
+      Hic dignissimos laborum a molestias facere! Quaerat aliquid voluptates, id facilis laudantium nam consectetur
+      officia error accusamus eveniet a commodi asperiores numquam. Architecto optio, molestiae soluta et assumenda
+      itaque! Corporis.</p>
+    <img class="foto-presentacion" src="./images/imagenes/abogada_FBN.jpg" alt="">
+  </section>
+  <section>
+    <h2></h2>
+    <div class="seccion-especialidades">
+      <img class="imagen_especialidad" src="" alt="">
+      <h3 class="titulo_especialidades"></h3>
+      <p class="texto_especialidades"></p>
+    </div>
+  </section>
+  <!-- js -->
+  <script src=" ./main.js"></script>
   <!-- bts js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
+  </script>
+
 </body>
 
 </html>

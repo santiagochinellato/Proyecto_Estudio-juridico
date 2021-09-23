@@ -1,0 +1,21 @@
+.seccion-presentacion {
+  // background-color: silver;
+  padding: 10vw 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/imagenes/background-dos.jpg);
+
+  .texto-presentacion {
+    width: 35vw;
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 30px;
+  }
+  .texto-presentacion::first-letter {
+    font-size: 3rem;
+  }
+  .foto-presentacion {
+    width: 40vw;
+  }
+}

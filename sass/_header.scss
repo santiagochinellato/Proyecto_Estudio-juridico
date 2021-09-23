@@ -1,0 +1,90 @@
+// header
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  .imagen-header {
+    // background-image: url(../images/imagenes/libro-primer-plano-bn-cut.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // height: 38vw;
+    height: 100% !important;
+    filter: brightness(0);
+    filter: opacity(0.5);
+    animation-name: header;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+    animation-delay: 0s;
+  }
+  @keyframes header {
+    0% {
+      filter: brightness(0);
+    }
+    25% {
+      filter: brightness(0);
+    }
+    100% {
+      filter: brightness(0.8);
+    }
+  }
+  .imagen-logo {
+    position: absolute;
+    z-index: 100 !important;
+    width: 25vw;
+    filter: brightness(8);
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    z-index: 3;
+  }
+  @keyframes logo {
+    0% {
+      filter: brightness(0);
+    }
+    30% {
+      filter: brightness(1);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  .header_caja-contacto {
+    position: relative;
+    // top: 25px;
+    display: flex;
+    justify-content: space-around;
+    // background-color: white;
+    width: 70%;
+    height: 5vw;
+    // border: 1px solid black;
+    // box-shadow: 2px 2px 5px black;
+    border-radius: 2px;
+    --animate-duration: 8s;
+    // clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    padding: 4vw 0%;
+    .contacto {
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+    }
+    .contacto p {
+      margin: 0px !important;
+      color: white;
+    }
+    .bi {
+      // color: black;
+      color: white;
+      font-size: 2rem !important;
+      margin-right: 0.7rem;
+    }
+  }
+}
