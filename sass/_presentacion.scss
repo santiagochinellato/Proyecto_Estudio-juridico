@@ -1,10 +1,13 @@
 .seccion-presentacion {
   // background-color: silver;
   padding: 10vw 0;
+  margin: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: url(../images/imagenes/background-dos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .texto-presentacion {
     width: 35vw;
@@ -14,6 +17,7 @@
   }
   .texto-presentacion::first-letter {
     font-size: 3rem;
+    color: #c0392b;
   }
   .foto-presentacion {
     width: 40vw;

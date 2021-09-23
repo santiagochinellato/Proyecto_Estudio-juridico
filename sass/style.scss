@@ -4,9 +4,11 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+// preset
+$color: #c0c0c0;
+$acento: #580909;
 
 // import
-
 @import "navBar";
 @import "header";
 @import "presentacion";
