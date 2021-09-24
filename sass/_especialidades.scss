@@ -1,66 +1,105 @@
 .especialidades {
-  background-color: black;
+  background-color: white;
   // height: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3vw;
   .titulo-principal-especialidades {
-    color: silver;
-    margin-top: 5vw;
+    color: $titulos;
+    margin: 5vw 0%;
     font-size: 3rem;
-    border-bottom: 1px solid $acento;
+    border-bottom: 1px solid $titulos;
     padding-bottom: 1vw;
   }
-  .seccion-especialidades {
+
+  // ---------------------------------------
+
+  /* SECCION AMENITIES */
+  .seccion-amenities {
+    display: flex;
     width: 100%;
-    height: 30vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2.5vw 0%;
+    height: 27vw !important;
+    /* padding: 4% 2%; */
   }
-  .card-especialidades {
-    width: 17vw;
-    border: 1px solid silver;
+  .seccion-amenities-titulo {
+    text-align: center;
+    font-size: 48px;
+    color: #a1a53e;
+    line-height: 58.51px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-weight: bold;
+  }
+  .card-amen {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    line-height: 0;
+    transition: all 600ms;
+  }
+  .card-amen-imagen {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+    filter: brightness(70%);
+  }
+  .card-amen-texto {
+    position: absolute;
+    bottom: 40%;
+    color: white;
+    font-size: 26px;
+    overflow: hidden;
+    margin-left: 2vw;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.404);
+    /* margin-bottom: 5%; */
+  }
+  .card-amen-descripcion {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    width: 30vw;
+    height: 10vw;
+    color: white;
+    font-size: 1rem;
+    overflow: hidden;
+    // margin-left: 8px;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.404);
+    background-color: 0.5px 0.5px rgba(0, 0, 0, 0.404) !important;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    visibility: hidden;
+  }
+  .amen-p {
+    line-height: 1em;
+    margin: 0% 2%;
+  }
 
-    border-radius: 3px;
-    .imagen_especialidad {
-      width: 100%;
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 70%);
-    }
-    .titulo_especialidades {
-      color: white;
-      font-size: 1.3rem;
-      text-align: center;
-      margin-top: 2vw;
-    }
-    .texto_especialidades {
-      color: white;
-      margin: 1vw;
-      text-align: justify;
-    }
-    .boton-especialidades {
-      background-color: transparent;
-      color: $acento;
-      border: 1px solid $acento !important;
-      margin: 1vw 0%;
-    }
-    .boton-especialidades:hover {
-      background-color: transparent;
-      color: $acento;
-      border: 1px solid $acento !important;
-      margin: 1vw 0%;
-    }
-    .boton-especialidades:focus {
-      outline: none;
-      box-shadow: none;
-    }
+  .card-amen:hover .card-amen-descripcion {
+    visibility: visible;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
+  }
+  .card-amen:hover .card-amen-texto {
+    border-bottom: 2px solid white;
+  }
+  .card-amen:hover .card-amen-imagen {
+    filter: brightness(60%) blur(2px);
+  }
+  .card-amen:hover {
+    flex: 30%;
+  }
+  .card-amen-texto:hover {
+    flex: 0%;
+    overflow: hidden;
+  }
+
+  .contenedor-amenities-celular {
+    display: none;
   }
 }

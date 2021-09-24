@@ -1,8 +1,10 @@
 /* MENU */
 .container {
   display: flex;
-  // justify-content: center !important;
+  justify-content: center !important;
   align-items: center;
+  padding-left: 5vw !important;
+  width: 100% !important;
 }
 .navbar-collapse {
   flex-grow: 0 !important;
@@ -14,11 +16,13 @@ nav {
 }
 .menu-desktop {
   --animate-duration: 8s;
+  height: 100px;
 }
 .logo-nav {
-  width: 8vw;
+  width: 6vw;
   margin-left: 3vw;
   visibility: hidden;
+  position: absolute;
 }
 .contactanos-item {
   color: $color !important;
@@ -39,7 +43,7 @@ nav {
 }
 .texto-menu {
   color: $color !important;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 

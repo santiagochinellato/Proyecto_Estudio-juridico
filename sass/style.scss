@@ -7,12 +7,14 @@
 // preset
 $color: #c0c0c0;
 $acento: #580909;
+$titulos: #706d6dec;
 
 // import
 @import "navBar";
 @import "header";
 @import "presentacion";
 @import "especialidades";
+@import "blog";
 
 // header
 .imagen-header {
