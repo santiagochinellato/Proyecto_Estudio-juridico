@@ -260,7 +260,6 @@ header .header_caja-contacto .bi {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 3vw;
   /* SECCION AMENITIES */
 }
 
@@ -363,6 +362,166 @@ header .header_caja-contacto .bi {
 
 .especialidades .contenedor-amenities-celular {
   display: none;
+}
+
+.blog {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  align-content: center;
+  padding-bottom: 6vw;
+}
+
+.blog .titulo-principal-blog {
+  color: #706d6dec;
+  margin: 5vw 0%;
+  font-size: 3rem;
+  border-bottom: 1px solid #706d6dec;
+  padding-bottom: 1vw;
+}
+
+.blog .seccion-blog {
+  width: 100%;
+  margin: 0% !important;
+  padding: 0% !important;
+}
+
+.blog .seccion-blog .seccion-blog-grid {
+  display: grid;
+  grid-template-areas: "not-1 not-1 not-2 not-2 not-3" "not-1 not-1 not-4 not-4 not-4";
+  grid-template-columns: 20% 20% 16% 10% 26%;
+  grid-template-rows: 18vw 18vw;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+}
+
+.blog .seccion-blog .seccion-blog-grid .caja-texto-blog {
+  width: 100%;
+  height: 50%;
+  opacity: 0.7;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blog .seccion-blog .seccion-blog-grid .titulo-noticia {
+  margin-left: 1vw;
+  margin-top: 1.5vw;
+}
+
+.blog .seccion-blog .seccion-blog-grid .bajada-noticias {
+  margin-left: 1vw;
+  font-weight: 100;
+}
+
+.blog .seccion-blog .seccion-blog-grid .not-1 {
+  grid-area: not-1;
+  background-image: url(../images/imagenes-blog/laboral.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.blog .seccion-blog .seccion-blog-grid .not-2 {
+  grid-area: not-2;
+  background-image: url(../images/imagenes-blog/civil.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.blog .seccion-blog .seccion-blog-grid .not-3 {
+  grid-area: not-3;
+  background-image: url(../images/imagenes-blog/salud.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.blog .seccion-blog .seccion-blog-grid .not-4 {
+  grid-area: not-4;
+  background-image: url(../images/imagenes-blog/sucecion.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.blog .seccion-blog .seccion-blog-grid .seccion-noticias-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  box-shadow: 35px 35px 70px #c3c3c3, -35px -35px 70px #fdfdfd;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-image: url(../images/imagenes/escritorio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.contacto form {
+  background-color: white;
+  margin: 10vw 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.contacto form .titulo-principal-form {
+  color: #706d6dec;
+  margin: 2vw 0%;
+  font-size: 3rem;
+  border-bottom: 1px solid #706d6dec;
+  padding-bottom: 1vw;
+}
+
+.contacto form .form-control {
+  border: none;
+  border-bottom: 1px solid #706d6dec;
+  border-radius: 0px;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.contacto form .btn {
+  outline: none !important;
+  box-shadow: none;
+  color: #706d6dec;
+  border: 1px solid #706d6dec;
+  background-color: transparent;
+  align-self: center;
+  height: 3.5vw;
+}
+
+.contacto form .btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.contacto .caja-informacion {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 35px 35px 70px #c3c3c3, -35px -35px 70px #fdfdfd;
+}
+
+.contacto .caja-informacion .caja-direcciones-telefonos {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto .caja-informacion .caja-direcciones-telefonos .contenedor-form-direcciones {
+  display: flex;
+}
+
+.contacto .caja-informacion .caja-direcciones-telefonos .contenedor-form-direcciones .icono-form {
+  margin: 0% 2vw;
 }
 
 .imagen-header {

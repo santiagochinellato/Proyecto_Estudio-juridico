@@ -1,0 +1,67 @@
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-image: url(../images/imagenes/escritorio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+
+  form {
+    background-color: white;
+    margin: 10vw 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+    .titulo-principal-form {
+      color: $titulos;
+      margin: 2vw 0%;
+      font-size: 3rem;
+      border-bottom: 1px solid $titulos;
+      padding-bottom: 1vw;
+    }
+    .form-control {
+      border: none;
+      border-bottom: 1px solid $titulos;
+      border-radius: 0px;
+      outline: none !important;
+      box-shadow: none;
+    }
+    .btn {
+      outline: none !important;
+      box-shadow: none;
+      color: $titulos;
+      border: 1px solid $titulos;
+      background-color: transparent;
+      align-self: center;
+
+      height: 3.5vw;
+    }
+    .btn:focus {
+      outline: none !important;
+      box-shadow: none;
+    }
+  }
+  .caja-informacion {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 35px 35px 70px #c3c3c3, -35px -35px 70px #fdfdfd;
+
+    .caja-direcciones-telefonos {
+      display: flex;
+      flex-direction: column;
+
+      .contenedor-form-direcciones {
+        display: flex;
+
+        .icono-form {
+          margin: 0% 2vw;
+        }
+      }
+    }
+  }
+}
