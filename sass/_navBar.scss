@@ -88,7 +88,7 @@ nav {
     display: flex;
     justify-content: space-between !important;
     padding: 0% 5% !important;
-    max-height: 30vw !important;
+    // max-height: 30vw !important;
   }
   .bg-menu {
     background-color: black !important;
@@ -145,6 +145,23 @@ nav {
     background-color: transparent;
     color: $color !important;
   }
+  .navbar-collapse {
+    background-color: black !important;
+  }
+  .navbar-nav {
+    margin-top: 5vw;
+    background-color: black;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .nav-item-mobile {
+    border: 1px solid $color !important;
+    border-radius: 5px;
+    font-weight: 300;
+  }
   /*  FIN NAVBAR */
 }

@@ -98,12 +98,9 @@ header {
 @media (min-width: 320px) and (max-width: 991px) {
   .imagen-header-mobile {
     display: inline !important;
-    // background-image: url(../images/imagenes/libro-primer-plano-bn-cut.jpg) !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    // height: 38vw;
-    height: 100% !important;
     filter: brightness(0);
     filter: opacity(0.5);
     animation-name: headermobile;
@@ -112,6 +109,7 @@ header {
     animation-fill-mode: forwards;
     animation-duration: 10s;
     animation-delay: 0s;
+    height: 100%;
   }
   @keyframes headermobile {
     0% {
@@ -134,7 +132,8 @@ header {
     width: 25vw;
   }
   header {
-    height: 150vw !important;
+    height: 190vw !important;
+    overflow: hidden !important;
   }
   .header_caja-contacto {
     position: fixed !important;
@@ -142,17 +141,18 @@ header {
     bottom: 0px !important;
     justify-content: space-around;
     width: 100% !important;
-    height: 70px !important;
+    height: 80px !important;
     border-radius: 2px;
     --animate-duration: 8s;
     padding: 4vw 0%;
     background-color: black;
-    z-index: 100;
+    z-index: 3 !important;
     .contacto {
       display: flex;
       justify-content: baseline;
       align-items: center;
       background-image: none !important;
+      z-index: 3 !important;
     }
     .contacto p {
       margin: 0px !important;
@@ -161,12 +161,13 @@ header {
     }
     .bi {
       color: $color;
-      font-size: 1.5rem !important;
+      font-size: 1.8rem !important;
       // margin-right: 0.7rem;
       margin: auto !important;
     }
     .direc-nodesk {
       display: inline !important;
+      margin: auto 0%;
     }
   }
 } ;
