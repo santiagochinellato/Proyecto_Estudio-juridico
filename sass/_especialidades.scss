@@ -103,3 +103,62 @@
     display: none;
   }
 }
+.accordion {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .titulo-principal-especialidades {
+    color: $titulos;
+    margin: 10vw 0% !important;
+    font-size: 1.5rem !important;
+    border-bottom: 1px solid $titulos;
+    padding-bottom: 1vw;
+  }
+  .seccion-amenities {
+    display: none !important;
+  }
+
+  .accordion {
+    width: 100%;
+    display: inline;
+  }
+
+  .accordion-item {
+    background-color: transparent !important;
+  }
+
+  .accordion-button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vw;
+    color: white !important;
+    font-size: 1.3rem !important;
+    text-shadow: 0.1em 0.1em 0.2em black !important;
+  }
+  .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .imagen-1 {
+    background-image: url(../images/imagenes/estatua.jpg) !important;
+  }
+  .imagen-2 {
+    background-image: url(../images/imagenes/hombre-firmando-computadora.jpg);
+  }
+  .imagen-3 {
+    background-image: url(../images/imagenes/libros-lupa.jpg);
+  }
+  .imagen-4 {
+    background-image: url(../images/imagenes/martillos-libros.jpg);
+  }
+  .imagen-5 {
+    background-image: url(../images/imagenes/mujer-firmando.jpg);
+  }
+  .accordion-button::after {
+    background-image: url(../images/iconos_logos/arrow-down.png) !important;
+  }
+  .parrafo-accordion {
+    text-align: justify;
+  }
+}

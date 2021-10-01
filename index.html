@@ -26,6 +26,7 @@
 <body>
   <header>
     <img class="imagen-header" src="./images/imagenes/libro-primer-plano-bn-cut.jpg " alt="">
+    <img class="imagen-header-mobile" src="./images/imagenes/header-mobile-2.png" alt="">
     <img class="imagen-logo" src="./images/iconos_logos/logo_blanco-borde.png" alt="">
     <!-- Menu de navegacion desktop  -->
     <nav class=" navbar fixed-top navbar-expand-lg navbar-dark menu-desktop animate__animated animate__fadeIn  "
@@ -36,7 +37,6 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse " id="navbarNav">
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
@@ -57,6 +57,38 @@
       </div>
     </nav>
     <!-- Menu de navegacion mobile  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 menu-mobile " id="display">
+      <div class="container menu-mobile-contenedor">
+        <a class="navbar-brand" href="#"><img src="./images/iconos_logos/logo_blanco-borde.png" class="logo-menu-mobile"
+            alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Método</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Descargá la guia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Charlemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-menu" href="#">Contactános</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin menu de navegacion -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 menu-mobile " id="display">
       <div class="container">
 
@@ -98,8 +130,13 @@
         <i class="bi bi-envelope-fill imagen-contacto "></i>
         <p>jerezleal@estudio.com</p>
       </div>
+      <div class="contacto animate__animated animate__fadeIn direc-nodesk">
+        <i class="bi bi-building icono-form"></i>
+        <p>jerezleal@estudio.com</p>
+      </div>
     </div>
   </header>
+
   <section class="seccion-presentacion">
 
     <p class="texto-presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur. Modi quo
@@ -113,12 +150,12 @@
       itaque! Corporis.</p>
     <img class="foto-presentacion" src="./images/imagenes/abogada_FBN.jpg" alt="">
   </section>
+
   <section class="especialidades">
     <h2 class="titulo-principal-especialidades"> Aréas de Especialización</h2>
     <div class="seccion-amenities">
       <div class="card-amen">
-        <img class="card-amen-imagen" src="./images/imagenes/estatua.jpg"
-          alt="Buena Vista Villa Carlos Paz, Vistas panorámicas, desarrollo inmobiliario, Ammiraglia desarrolladora">
+        <img class="card-amen-imagen" src="./images/imagenes/estatua.jpg" alt="">
         <h2 class="card-amen-texto">Derecho <br> Civil</h2>
         <div class="card-amen-descripcion">
           <p class="amen-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
@@ -130,9 +167,8 @@
         </div>
       </div>
       <div class="card-amen">
-        <img class="card-amen-imagen" src="./images/imagenes/hombre-firmando-computadora.jpg"
-          alt="Buena Vista Villa Carlos Paz, Balcón aterrazado, desarrollo inmobiliario, Ammiraglia desarrolladora">
-        <h2 class="card-amen-texto">Derecho <br> Informatico</h2>
+        <img class="card-amen-imagen" src="./images/imagenes/hombre-firmando-computadora.jpg" alt="">
+        <h2 class="card-amen-texto">Derecho <br> Informático</h2>
         <div class="card-amen-descripcion">
           <p class="amen-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
             aut nisi,
@@ -143,8 +179,7 @@
         </div>
       </div>
       <div class="card-amen">
-        <img class="card-amen-imagen" src="./images/imagenes/libros-lupa.jpg"
-          alt="Buena Vista Villa Carlos Paz, Pileta en altura, desarrollo inmobiliario, Ammiraglia desarrolladora">
+        <img class="card-amen-imagen" src="./images/imagenes/libros-lupa.jpg" alt="">
         <h2 class="card-amen-texto">Derecho<br> Laboral</h2>
         <div class="card-amen-descripcion">
           <p class="amen-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
@@ -156,8 +191,7 @@
         </div>
       </div>
       <div class="card-amen">
-        <img class="card-amen-imagen" src="./images/imagenes/martillos-libros.jpg"
-          alt="Buena Vista Villa Carlos Paz, Quincho con asador, desarrollo inmobiliario, Ammiraglia desarrolladora">
+        <img class="card-amen-imagen" src="./images/imagenes/martillos-libros.jpg" alt="">
         <h2 class="card-amen-texto">Derecho<br>
           de salud</h2>
         <div class="card-amen-descripcion">
@@ -170,8 +204,7 @@
         </div>
       </div>
       <div class="card-amen">
-        <img class="card-amen-imagen" src="./images/imagenes/mujer-firmando.jpg"
-          alt="Buena Vista Villa Carlos Paz, Quincho con asador, desarrollo inmobiliario, Ammiraglia desarrolladora">
+        <img class="card-amen-imagen" src="./images/imagenes/mujer-firmando.jpg" alt="">
         <h2 class="card-amen-texto">Derecho <br>
           Sucesorio</h2>
         <div class="card-amen-descripcion">
@@ -184,96 +217,284 @@
         </div>
       </div>
     </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button imagen-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Derecho Civil
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p class="parrafo-accordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
+              aut nisi,
+              quia eos est quae quod
+              corporis! Numquam vitae ullam aperiam molestias omnis! Esse sequi consequatur laboriosam tempora illo
+              saepe
+              ipsam quos ducimus porro doloribus, eum praesentium, nisi magni dolorum? Unde, reiciendis? Qui quae,
+              consequuntur deserunt odit quod illo?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed imagen-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Derecho Informático
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p class="parrafo-accordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
+              aut nisi,
+              quia eos est quae quod
+              corporis! Numquam vitae ullam aperiam molestias omnis! Esse sequi consequatur laboriosam tempora illo
+              saepe
+              ipsam quos ducimus porro doloribus, eum praesentium, nisi magni dolorum? Unde, reiciendis? Qui quae,
+              consequuntur deserunt odit quod illo?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed imagen-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Derecho Laboral
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p class="parrafo-accordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
+              aut nisi,
+              quia eos est quae quod
+              corporis! Numquam vitae ullam aperiam molestias omnis! Esse sequi consequatur laboriosam tempora illo
+              saepe
+              ipsam quos ducimus porro doloribus, eum praesentium, nisi magni dolorum? Unde, reiciendis? Qui quae,
+              consequuntur deserunt odit quod illo?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed imagen-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Derecho de Salud
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p class="parrafo-accordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
+              aut nisi,
+              quia eos est quae quod
+              corporis! Numquam vitae ullam aperiam molestias omnis! Esse sequi consequatur laboriosam tempora illo
+              saepe
+              ipsam quos ducimus porro doloribus, eum praesentium, nisi magni dolorum? Unde, reiciendis? Qui quae,
+              consequuntur deserunt odit quod illo?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed imagen-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Derecho Sucesorio
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p class="parrafo-accordion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime culpa
+              aut nisi,
+              quia eos est quae quod
+              corporis! Numquam vitae ullam aperiam molestias omnis! Esse sequi consequatur laboriosam tempora illo
+              saepe
+              ipsam quos ducimus porro doloribus, eum praesentium, nisi magni dolorum? Unde, reiciendis? Qui quae,
+              consequuntur deserunt odit quod illo?</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="blog">
     <h2 class="titulo-principal-blog">Blog y Novedades</h2>
-    <div class=" container seccion-blog">
+    <div class=" container-fluid seccion-blog">
       <div class="seccion-blog-grid">
         <div class="seccion-noticias-blog not-1">
           <div class="caja-texto-blog">
             <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
-            <p class="bajada-noticias">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, assumenda.
-              Sequi
-              odit provident
-              reprehenderit commodi ea? Eius veniam quisquam hic.
-              Sequi
-              odit provident
-              reprehenderit commodi ea? Eius veniam quisquam hicSequi
-              odit provident
+            <p class="bajada-noticias">
+              Lorem, ipsum.
             </p>
           </div>
         </div>
         <div class="seccion-noticias-blog not-2">
           <div class="caja-texto-blog">
             <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
-            <p class="bajada-noticias">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, assumenda.
+            <p class="bajada-noticias">
             </p>
           </div>
         </div>
         <div class="seccion-noticias-blog not-3">
           <div class="caja-texto-blog">
             <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
-            <p class="bajada-noticias">Lorem ipsum dolor sit amet consectetur adipisicing
+            <p class="bajada-noticias">
             </p>
           </div>
         </div>
         <div class="seccion-noticias-blog not-4">
           <div class="caja-texto-blog">
             <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
-            <p class="bajada-noticias">Lorem ipsum dolor sit amet consectetur
+            <p class="bajada-noticias">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" container-fluid seccion-blog-mobile">
+      <div class="seccion-blog-grid">
+        <div class="seccion-noticias-blog not-1">
+          <div class="caja-texto-blog">
+            <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
+            <p class="bajada-noticias">
+            </p>
+          </div>
+        </div>
+        <div class="seccion-noticias-blog not-2">
+          <div class="caja-texto-blog">
+            <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
+            <p class="bajada-noticias">
+            </p>
+          </div>
+        </div>
+        <div class="seccion-noticias-blog not-3">
+          <div class="caja-texto-blog">
+            <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
+            <p class="bajada-noticias">
+            </p>
+          </div>
+        </div>
+        <div class="seccion-noticias-blog not-4">
+          <div class="caja-texto-blog">
+            <h4 class="titulo-noticia">Lorem, ipsum dolor.</h4>
+            <p class="bajada-noticias">
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="contacto">
-    <form class="col-7">
+  <section class="contacto-desk row g-0">
+    <div class="formulario-datos col-9 ">
       <h2 class="titulo-principal-form">Contactános</h2>
-      <div class="
-       mb-3 col-9">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="Nombre y Apellido" required>
-      </div>
-      <div class="mb-3 col-9">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="Teléfono" required>
-      </div>
-      <div class="mb-3 col-9">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="E-mail" required>
-      </div>
-      <div class="mb-3 col-9">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su consulta"
-          required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary mb-5">Enviar consulta</button>
-    </form>
-    <!-- <div class="caja-informacion col-4">
-      <h5></h5>
-      <div class="caja-direcciones-telefonos">
-        <div class="contenedor-form-direcciones">
-          <i class="bi bi-telephone-fill  icono-form"></i>
-          <p>+54 9 0294 4422623</p>
+      <div class="contenedor-formulario-datos col-12">
+        <form class="col-6">
+          <div class="mb-3 col-9">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Nombre y Apellido" required>
+          </div>
+          <div class="mb-3 col-9">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Teléfono" required>
+          </div>
+          <div class="mb-3 col-9">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="E-mail" required>
+          </div>
+          <div class="mb-3 col-9">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su consulta"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-5">Enviar consulta</button>
+        </form>
+        <div class=" contenedor-informacion mb-3 col-6">
+          <div class="datos">
+            <div class="contenedor-datos">
+              <i class="bi bi-telephone-fill icono-form"></i>
+              <p class="texto-info-form">+54 9 0294 4422623</p>
+            </div>
+            <div class="contenedor-datos">
+              <i class="bi bi-whatsapp icono-form"></i>
+              <p class="texto-info-form">+54 9 294 4232300</p>
+            </div>
+            <div class="contenedor-datos">
+              <i class="bi bi-envelope-fill icono-form"></i>
+              <p class="texto-info-form">jerezleal@estudio.com</p>
+            </div>
+            <div class="contenedor-datos">
+              <i class="bi bi-building icono-form"></i>
+              <p class="texto-info-form">Calle falsa 1234, san carlos de bariloche. Argentina
+              </p>
+            </div>
+          </div>
+          <iframe class="ubicacion-mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4249.7396947016605!2d-71.309160567633!3d-41.13409467798327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b72dbb708e1%3A0xd91b7e92f820aa94!2sCentro%20C%C3%ADvico%20Bariloche!5e0!3m2!1ses-419!2sar!4v1632609514053!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy" id="mapContainer"></iframe>
         </div>
-        <div class="contenedor-form-direcciones">
-          <i class="bi bi-whatsapp icono-form "></i>
-          <p>+54 9 294 4232300</p>
-        </div>
-        <div class="contenedor-form-direcciones">
-          <i class="bi bi-envelope-fill icono-form "></i>
-          <p>jerezleal@estudio.com</p>
-        </div>
-        <div class="contenedor-form-direcciones">
-          <i class="bi bi-building icono-form "></i>
-          <p>Calle Falsa 1234, Springfield</p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4249.7396947016605!2d-71.309160567633!3d-41.13409467798327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b72dbb708e1%3A0xd91b7e92f820aa94!2sCentro%20C%C3%ADvico%20Bariloche!5e0!3m2!1ses-419!2sar!4v1632609514053!5m2!1ses-419!2sar"
-          width="300px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div> -->
+      </div>
     </div>
   </section>
+  <section class="contacto-mobile row  g-0">
+    <div class="formulario-datos-mobile col-11 ">
+      <h2 class="titulo-principal-form-mobile">Contactános</h2>
+      <div class="contenedor-formulario-datos-mobile col-12">
+        <form class="col-12">
+          <div class="mb-3 col-11">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Nombre y Apellido" required>
+          </div>
+          <div class="mb-3 col-11">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Teléfono" required>
+          </div>
+          <div class="mb-3 col-11">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="E-mail" required>
+          </div>
+          <div class="mb-3 col-11">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su consulta"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-5">Enviar consulta</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <img src="./images/iconos_logos/logo_blanco-borde.png" alt="">
+    <div class="footer-secciones">
+      <h5>Secciones</h5>
+      <ul>
+        <li><a href="#informacion">Información</a></li>
+        <li><a href="#areas"> Areas de Especialización</a></li>
+        <li><a href="#blog">Blog y Novedades</a></li>
+        <li><a href="#contacto">Contactános</a></li>
+      </ul>
+    </div>
+    <div class="footer-articulos">
+      <h5>Articulos</h5>
+      <ul>
+        <li><a href="#">Lorem, ipsum dolor.</a></li>
+        <li><a href="#">Lorem, ipsum.</a></li>
+        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+        <li><a href="#">Lorem, ipsum dolor.</a></li>
+      </ul>
+    </div>
+    <div class="footer-iconos">
+      <div class="iconos">
+        <i class="bi bi-telephone-fill icono-form"></i>
+        <i class="bi bi-whatsapp icono-form"></i>
+        <i class="bi bi-envelope-fill icono-form"></i>
+      </div>
+      <div class="direccion">
+        <p>Calle falsa 1234, san carlos de bariloche. Argentina</p>
+      </div>
+    </div>
+  </footer>
   <!-- js -->
   <script src=" ./main.js"></script>
   <!-- bts js -->

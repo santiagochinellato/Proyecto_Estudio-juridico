@@ -17,6 +17,7 @@ nav {
 .menu-desktop {
   --animate-duration: 8s;
   height: 100px;
+  color: $color !important;
 }
 .logo-nav {
   width: 6vw;
@@ -34,12 +35,18 @@ nav {
 
 .contactanos-item:hover {
   background-color: transparent;
-  color: $acento !important;
-  border: 1px solid $acento;
+  color: $color !important;
+  border: 1px solid $color;
 }
 .nav-link {
   margin: auto 2.3rem;
   font-size: 1.2rem !important;
+  color: #c0c0c0 !important;
+  font-weight: 300 !important;
+}
+.nav-item {
+  color: #c0c0c0 !important;
+  font-weight: 300 !important;
 }
 .texto-menu {
   color: $color !important;
@@ -67,15 +74,24 @@ nav {
     display: none;
   }
   .menu-mobile {
-    background-color: #59188c;
+    background-color: black;
   }
 }
 /* FIN MENU */
 
 @media (min-width: 320px) and (max-width: 992px) {
   /* INICIO NAVBAR */
+  .logo-menu-mobile {
+    width: 15px;
+  }
+  .menu-mobile-contenedor {
+    display: flex;
+    justify-content: space-between !important;
+    padding: 0% 5% !important;
+    max-height: 30vw !important;
+  }
   .bg-menu {
-    background-color: #4a148c !important;
+    background-color: black !important;
   }
 
   .navbar-toggler:focus,
@@ -90,7 +106,7 @@ nav {
     height: 39px;
     font-size: 18px;
     /* padding: 10px; */
-    border-color: #4a148c !important;
+    border-color: black !important;
   }
 
   .botonmenu:focus {
@@ -103,14 +119,14 @@ nav {
   }
 
   .nav-link-bg-color {
-    background-color: #e62b75;
+    background-color: black;
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
   }
 
   .nav-link-color-letra {
-    color: white !important;
+    color: $color !important;
     font-size: 16px;
     width: 115px;
     text-align: center;
@@ -122,12 +138,12 @@ nav {
     font-size: 16px;
     width: 120px;
     text-align: center;
-    border: 1px solid #e62b75 !important;
+    border: 1px solid $color !important;
   }
 
   .nav-link-color-letra-contacto:hover {
-    background-color: rgb(255, 255, 255);
-    color: #e62b75 !important;
+    background-color: transparent;
+    color: $color !important;
   }
 
   /*  FIN NAVBAR */

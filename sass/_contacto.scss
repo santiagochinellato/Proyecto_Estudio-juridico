@@ -1,4 +1,4 @@
-.contacto {
+.contacto-desk {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -6,16 +6,17 @@
   background-image: url(../images/imagenes/escritorio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
 
-  form {
+  .formulario-datos {
     background-color: white;
-    margin: 10vw 0%;
+    display: flex;
+    margin: 4vw 0%;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     align-items: center;
-    border-radius: 6px;
 
     .titulo-principal-form {
       color: $titulos;
@@ -23,43 +24,151 @@
       font-size: 3rem;
       border-bottom: 1px solid $titulos;
       padding-bottom: 1vw;
+      text-align: center;
+      width: 30%;
     }
-    .form-control {
-      border: none;
-      border-bottom: 1px solid $titulos;
-      border-radius: 0px;
-      outline: none !important;
-      box-shadow: none;
-    }
-    .btn {
-      outline: none !important;
-      box-shadow: none;
-      color: $titulos;
-      border: 1px solid $titulos;
-      background-color: transparent;
-      align-self: center;
+    .contenedor-formulario-datos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 
-      height: 3.5vw;
-    }
-    .btn:focus {
-      outline: none !important;
-      box-shadow: none;
-    }
-  }
-  .caja-informacion {
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 35px 35px 70px #c3c3c3, -35px -35px 70px #fdfdfd;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    .caja-direcciones-telefonos {
+        .form-control {
+          border: none;
+          border-bottom: 1px solid $titulos;
+          border-radius: 0px;
+          outline: none !important;
+          box-shadow: none;
+          font-weight: 300;
+        }
+        .btn {
+          outline: none !important;
+          box-shadow: none;
+          color: $titulos;
+          border: 1px solid $titulos;
+          background-color: transparent;
+          align-self: center;
+          font-weight: 300;
+          height: 3.5vw;
+          margin-top: 0vw;
+        }
+        .btn:focus {
+          outline: none !important;
+          box-shadow: none;
+        }
+      }
+    }
+    .contenedor-informacion {
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
+      padding: 0% 2vw;
+    }
+    .datos {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
-      .contenedor-form-direcciones {
+      .contenedor-datos {
         display: flex;
+        align-items: center !important;
+        justify-content: flex-start;
+        align-self: baseline;
+      }
 
-        .icono-form {
-          margin: 0% 2vw;
+      .icono-form {
+        font-size: 1.5rem;
+        margin-right: 1vw;
+        color: $titulos;
+      }
+
+      .texto-info-form {
+        margin: 0%;
+        color: $titulos;
+        font-weight: 300;
+      }
+    }
+    .ubicacion-mapa {
+      width: 90% !important;
+      margin-bottom: 2vw;
+    }
+  }
+}
+.contacto-mobile {
+  display: none !important;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .contacto-desk {
+    display: none !important;
+  }
+  .contacto-mobile {
+    display: flex !important;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-image: url(../images/imagenes/escritorio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+
+    .formulario-datos-mobile {
+      background-color: white;
+      display: flex;
+      margin: 6vw 0%;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      align-items: center;
+
+      .titulo-principal-form-mobile {
+        color: $titulos;
+        margin: 10vw 0% !important;
+        font-size: 1.5rem !important;
+        border-bottom: 1px solid $titulos;
+        padding-bottom: 1vw;
+      }
+      .contenedor-formulario-datos-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .form-control {
+            border: none;
+            border-bottom: 1px solid $titulos;
+            border-radius: 0px;
+            outline: none !important;
+            box-shadow: none;
+            font-weight: 300;
+          }
+          .btn {
+            outline: none !important;
+            box-shadow: none;
+            color: $titulos;
+            border: 1px solid $titulos;
+            background-color: transparent;
+            align-self: center;
+            font-weight: 300;
+            height: 40px;
+            margin-top: 0vw;
+          }
+          .btn:focus {
+            outline: none !important;
+            box-shadow: none;
+          }
         }
       }
     }
